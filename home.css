@@ -10,19 +10,24 @@ html, body {
 .header {
     width: 100%;
     height: 80px;
-    background: #278722;
+    background: #55984A;
+    
 }
 
 ul.menu3{
     list-style-type: none;
     text-decoration: none;
     margin: 0px;
-    padding-right: 15px;
-
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu3 li{
     display: inline-block;
+    margin: 20px;
+    margin-top: 30px;
+    margin-right: 5px;
 }
 
 .menu3 a:link, .menu3 a:visited{
@@ -30,13 +35,10 @@ ul.menu3{
     color: white;
     font: 14px Arial;
     display: block;
-    background-color: #278722;
-    padding: 0px 5px;
-    line-height: 30px;
 }
 .menu3 a:hover{
-    color: black;
-    background-color: white;
+    text-decoration: dashed;
+    color: #35622D;
 }
 
 .container {
@@ -45,27 +47,36 @@ ul.menu3{
 }
 
 .sidebar {
+    position: absolute;
     width: 15%;
-    background: #278722;
-    float: right;
+    height: 100%;
+    left: 85%;
+    top: 10,5%;
+    background-color: #6DC26F;
+    z-index: 1;
 }
 
-ul.menu2{
+.sidebar ul.menu2 {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     list-style-type: none;
     text-decoration: none;
-    margin: 0px;
-    padding-right: 5px;
-
+    padding-left: 5%;
 }
+
 
 .menu2 a:link, .menu2 a:visited{
     text-decoration: none;
     color: white;
     font: 14px Arial;
     display: block;
-    background-color: #278722;
-    padding: 0px 5px;
+    background-color: #55984A;
+    padding: 3%;
     line-height: 30px;
+    margin: 5%;
+    border-radius: 10px;
+    text-align: center;
 }
 .menu2 a:hover{
     color: black;
@@ -74,10 +85,13 @@ ul.menu2{
 
 .content {
     width: 85%;
-    background: yellow;
 }
 
-.footer {
-    width: 100%;
-    background: black;
+.content ul.menu1 {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    text-align: left;
 }
