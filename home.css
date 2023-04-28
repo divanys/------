@@ -1,0 +1,59 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 80px;
+    background: blue;
+
+}
+
+ul.menu3{
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+.menu3 li{
+    display: inline-block;
+}
+.menu3 a:link, .menu3 a:visited{
+    text-decoration: none;
+    color: white;
+    font: 13px Arial;
+    display: block;
+    background-color: blue;
+    padding: 0px 5px;
+    line-height: 30px;
+}
+.menu3 a:hover{
+    color: black;
+    background-color: white;
+
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+ 
+.sidebar {
+    width: 15%;
+    background: green;
+}
+
+.content {
+    width: 85%;
+    background: yellow;
+}
+
+.footer {
+    width: 100%;
+    background: black;
+}
